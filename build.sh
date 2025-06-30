@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "✅ Hello from Jenkins! Build success."
+echo "Jenkins 자동 빌드 테스트 성공"
