@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "Jenkins 자동 빌드 테스트 성공 - 변경 13"
+echo "빌드 스크립트 실행됨"
+mkdir -p deploy_output
+cp index.html deploy_output/
