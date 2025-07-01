@@ -1,0 +1,17 @@
+name: CI - Docker 검사
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  docker-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dockerfile build 테스트
+        run: docker build . -t test:latest
+
+      - name: docker-compose 문법 검사
+        run: docker-compose config
