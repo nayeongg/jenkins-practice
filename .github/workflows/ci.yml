@@ -13,5 +13,10 @@ jobs:
       - name: Dockerfile build 테스트
         run: docker build . -t test:latest
 
+      - name: Docker Compose 설치
+        run: |
+          sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+
       - name: docker-compose 문법 검사
         run: docker-compose config
