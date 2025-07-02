@@ -1,4 +1,4 @@
-name: CD - Jenkins 배포 트리거
+name: CD-Jenkins 배포 트리거
 
 on:
   pull_request:
