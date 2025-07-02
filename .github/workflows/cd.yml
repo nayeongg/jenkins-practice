@@ -1,4 +1,4 @@
-name: CD - Jenkins 배포 트리거
+name: CD-Jenkins 배포 트리거
 
 on:
   pull_request:
@@ -17,4 +17,3 @@ jobs:
           user: jnu
           token: ${{ secrets.JENKINS_API_TOKEN }}
           job: test
-          insecure: true
